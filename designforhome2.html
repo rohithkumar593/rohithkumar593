@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="homepage.css"/>
+    <link rel="stylesheet" href="myfile2.css"/>
+    <link rel="stylesheet" href="myfile3.css"/>
+    <link rel="stylesheet" href="myfile4.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Iceland&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Kaushan+Script&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+<div class="everything">
+<header>
+<div class="join float-right">
+	<div class="nav-icon" >
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+    <div class="navigations float-left">
+                        <ul class="sidemain-content">
+                                <img src="logo.png" width="250" height="125" class="sidemain-content"></img>
+                                <li data-text="Home"><a href="designforhome2.html" class="active">Home<span></span></a></li>
+                                <li data-text="About"><a href="">About</a></li>
+                                <li data-text="Events"><a href="">Events</a></li>
+                                <li data-text="Register"><a href="register.html">Register</a></li>
+                        </ul>
+    </div>
+</div>
+</header>
+<div class="full-menu">
+	<div class="fullmenu-content">
+		<ul class="page-menu">
+			<li><a class="active" href="designforhome2.html">Home<span></span></a></li>
+			<li><a href="">About<span></span></a></li>
+			<li><a href="">Events<span></span></a></li>
+			<li><a href="">Contact<span></span></a></li>
+			<li><a href="register.html">Register<span></span></a></li>
+		</ul>
+	</div>
+	<a href=""  class="modal-close"></a>
+</div>
+<div class="cd-transition-layer"> 
+	<div class="bg-layer" style="width: 38554.8px; height: 866.4px;"></div>
+</div>
+<div class="wrapper">
+ 
+<section class="main" style="height: 722px;">
+	<div class="main-content">
+            <div class="videoContainer hide-for-small-only">
+                    <div class="overlay"></div>
+                  <video id="myvideo" autoplay loop muted>
+                        <source src="wallebg.mp4" type="video/mp4">
+                        <source src="wallebg.webm" type="video/webm">
+                  </video>
+
+            <div class="content">
+                <h1>Cynosure</h1>
+                <h2>FEB 28<sup>th </sup>- 29<sup>th </sup>2020</h2>
+                
+           </div>
+          
+    </div>
+	 
+	 
+</section>
+ 
+</div> 
+<script src="jquery-2.1.4.min.js"></script>
+ 
+ <script>
+ 'use strict'; 
+
+$(document).ready( function() {
+ 
+	
+
+    var width = 100,
+        perfData = window.performance.timing, 
+        EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
+        time = ((EstimatedTime/1000)%50) * 100
+
+
+    // Percentage Increment Animation
+    var PercentageID = $(".percentage"),
+            start = 0,
+            end = 100,
+            durataion = time;
+            animateValue(PercentageID, start, end, durataion);
+
+    function animateValue(id, start, end, duration) {
+
+        var range = end - start,
+          current = start,
+          increment = end > start? 1 : -1,
+          stepTime = Math.abs(Math.floor(duration / range)),
+          obj = $(id);
+
+
+        var timer = setInterval(function() {
+            current += increment;
+            $(obj).text(current);
+          //obj.innerHTML = current;
+            if (current == end) {
+                clearInterval(timer);
+            }
+        }, stepTime);
+    }
+    
+
+    
+	
+    
+
+
+   // FADE OUT EFFECT WHEN CLICK A LINK
+    $(document).on("click", "a:not(.lightbox)", function () {
+        var newUrl = $(this).attr("href");
+        if (!newUrl || newUrl[0] === "#") {
+            location.hash = newUrl;
+            return;
+        }
+        $("html").fadeOut(function () {
+            location = newUrl;
+        });
+        return false;
+    });
+    
+
+    var paget = $(".page-title .title").text();
+
+    $( ".page-title").append("<span></span>");
+    $( ".page-title span").append(paget);
+
+
+    
+    //posts page hover 
+    $('.blog-post .blog-link').hover(function(){
+        $(this).parent('.content-outter').parent('.blog-post').toggleClass('mousef');
+        $(this).parent('.blog-post').toggleClass('mousef');
+    });
+ 
+});  
+
+
+
+
+$(window).load( function() {
+ 
+
+function smokeeffect () { 
+    var modalTrigger = $('.nav-icon'),
+        transitionLayer = $('.cd-transition-layer'),
+        transitionBackground = transitionLayer.children(),
+        modalWindow = $('.full-menu');
+
+    var frameProportion = 1.78, //png frame aspect ratio
+        frames = 25, //number of png frames
+        resize = false;
+
+    //set transitionBackground dimentions
+    setLayerDimensions();
+    $(window).on('resize', function(){
+        if( !resize ) {
+            resize = true;
+            (!window.requestAnimationFrame) ? setTimeout(setLayerDimensions, 300) : window.requestAnimationFrame(setLayerDimensions);
+        }
+    });
+
+    //open modal window
+    modalTrigger.on('click', function(event){   
+        event.preventDefault();
+        transitionLayer.addClass('visible opening');
+        var delay = ( $('.no-cssanimations').length > 0 ) ? 0 : 600;
+        setTimeout(function(){
+            modalWindow.addClass('visible');
+        }, delay);
+    });
+
+    //close modal window
+    modalWindow.on('click', '.modal-close', function(event){
+        event.preventDefault();
+        transitionLayer.addClass('closing');
+        modalWindow.removeClass('visible');
+        transitionBackground.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(){
+            transitionLayer.removeClass('closing opening visible');
+            transitionBackground.off('webkitAnimationEnd oanimationend msAnimationEnd animationend');
+        });
+    });
+
+    function setLayerDimensions() {
+        var windowWidth = $(window).width(),
+            windowHeight = $(window).height(),
+            layerHeight, layerWidth;
+
+        if( windowWidth/windowHeight > frameProportion ) {
+            layerWidth = windowWidth;
+            layerHeight = layerWidth/frameProportion;
+        } else {
+            layerHeight = windowHeight*1.2;
+            layerWidth = layerHeight*frameProportion;
+        }
+
+        transitionBackground.css({
+            'width': layerWidth*frames+'px',
+            'height': layerHeight+'px',
+        });
+
+        resize = false;
+    }
+
+}
+smokeeffect()
+
+ 
+    
+/*--------------------------------------------------
+ Hero Section Height
+---------------------------------------------------*/	
+     function homeh() {
+        var hometext = $('.main')
+
+        hometext.css({
+            "height": $(window).height() + "px"
+        });
+    }
+    homeh();
+    $(window).resize(homeh);
+
+
+    $( ".page-menu li:not(.social) a, .portfolio_filter ul li a").append( "<span></span>" );
+
+    $('.nav-icon').on("click", function(){
+            $(this).toggleClass('modal-close');
+    });
+ 
+ 
+     
+}); // document load end 
+
+
+
+
+  
+</script>
+
+    </div>
+</body>
+</html>
