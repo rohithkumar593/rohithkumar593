@@ -1,0 +1,64 @@
+.main {
+ 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+  background-attachment: scroll;
+}
+.main h1
+{
+  font-family: "Starjedi";
+  font-size: 13vh;
+  text-shadow:  0 0 10px #161569,0 0 20px #161569,0 0 30px  #00B7D4,0 0 40px #505488,0 0 100px #00B7D4;
+
+  color:aliceblue;
+  position: absolute;
+  top:25vh;
+  left: 10vh;
+}
+.main h2
+{
+  font-family: 'Iceland', cursive;
+  font-size: 5vh;
+ position: absolute;
+  top:53vh;
+  left: 25vh;
+}
+.main video {
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0.85;
+}
+
+
+.main .content {
+  min-width: 100%; 
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+.content  video
+{
+  clear-fix:none;
+  position: fixed;
+  top:50%;
+  left: 50%;
+  z-index: 1;
+
+}

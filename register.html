@@ -1,0 +1,30 @@
+<link href="register.css"  rel="stylesheet" />
+<div id="registration-form">
+    <div class='fieldset'>
+    <legend>REGISTRATION</legend>
+        <form action="#" method="post" data-validate="parsley">
+
+            <div class='row'>
+                <input type="text" placeholder="Name*" name='Name' id='Name' data-required="true" data-error-message="Your Name is required">
+            </div>
+            <div class='row'>
+                <input type="text" placeholder="Name of the College" name='Name of the College' id='Name of the College' data-required="true" data-error-message="college name is necessary">
+            </div>
+            <div class='row'>
+                <input type="text" placeholder="E-mail*"  name='email' data-required="true" data-type="email" data-error-message="Your E-mail is required">
+            </div>
+            <div class='row'>
+            <select name="events" multiple >
+                <option value="select the event">SELECT THE EVENT</option>
+                <optgroup label="Events:">
+                <option value="Decrypt it">DECRYPT IT</option>
+                <option value="Bug Bounty">BUG BOUNTY</option>
+                    <option value="Quiz">QUIZ</option></optgroup>
+                <optgroup label="Games:"><option value="minifare">MINI FARE</option></optgroup></select>
+            </div>
+            <div class="row">
+            <input type="number" placeholder="phone no.*" name="phone number" data-required="true" data-error-message="phone number is necessary"></div>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style2.css"/>
+<link href="https://fonts.googleapis.com/css?family=Playball&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Ubuntu+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
+</head>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	function fun()
+	{
+		 var name=document.getElementById("field").value;
+		 var casemodify=name.toUpperCase();
+		 var verify="CYNOSURE";
+		 if(casemodify!=verify){
+		 	
+		 }
+		 else
+		 {
+		 	$("#main").hide();
+		 	var video=document.getElementById("play");
+		 	video.style.visibility="visible";
+		 	video.muted="muted";
+		 	video.load();
+		 	video.play();
+		 	video.onended = function(e) {
+ 				 window.location.replace("designforhome2.html");};
+		 }
+	}
+</script>
+<body>
+<div id="splash">
+<div id="main">
+	<div id="print">
+		<h1>printf("</h1>
+	</div>
+	<input type="text" name="input" maxlength="15" placeholder="Enter Cynosure " id="field"></input>
+	<div id="last">
+		<h1>");</h1>
+	</div>
+	<div id="bottom">
+	<h2> Enter Cynosure in the above syntax </h2>
+	</div>
+	<button onclick=fun();>Run</button>  
+</div>
+<div class="video-container">
+<video muted  id="play" >
+  <source src="homepagebg.mp4" type="video/mp4">
+  <source src="homepagebg.ogg" type="video/ogg">
+Your browser does not support this feature.
+ </video>
+</div>
+
+</div>
+</body>
+</html>

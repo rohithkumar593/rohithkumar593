@@ -1,0 +1,58 @@
+.sidemain-content img
+{
+	
+	margin:0;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.join
+{
+	opacity: 0.85;
+}
+ul
+{
+	padding:0;
+	margin:0;
+}
+ul.sidemain-content
+{
+	margin-inline-start:40vw;
+}
+.navigations .sidemain-content li 
+{
+
+    display: inline-block; 
+ 
+}
+
+.sidemain-content li a
+{
+
+	display: block;
+	margin-top:7vh;
+	overflow: hidden;
+	margin-right: 2vw;
+	text-decoration: none;
+	color:white;
+	font-size: 4vh;
+	font-weight: 2vh;
+}
+.sidemain-content li a:hover
+{
+	text-shadow: 0 0 1px #161569,0 0 2px #161569,0 0 3px  #00B7D4,0 0 4px #505488,0 0 5px #505488,0 0 6px #505488,0 0 7px #505488,0 0 8px #00B7D4,0 0 9px #00B7D4,0 0 10px #00B7D4;
+
+}
+header
+{
+	padding: 0;
+}
+.nav-icon
+{
+	margin:0;
+	float:right;
+	position: fixed;
+	margin-top: 8vh;
+	right:6vw;
+	
+}
