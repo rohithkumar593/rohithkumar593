@@ -28,6 +28,10 @@ a
 	color: white;
 	text-decoration: none;
 }
+a:hover
+{
+	text-shadow: 0 0 1px #161569,0 0 2px #161569,0 0 3px  #00B7D4,0 0 4px #505488,0 0 5px #505488,0 0 6px #505488,0 0 7px #505488,0 0 8px #00B7D4,0 0 9px #00B7D4,0 0 10px #00B7D4;
+}
 .logo
 {
 	box-sizing: content-box;
@@ -70,7 +74,7 @@ nav .links
 
 }
 
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 1505px)
 {
 	.logo
 	{
