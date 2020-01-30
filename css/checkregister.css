@@ -265,6 +265,14 @@ button
   top:60%;
   left:43%;
 }
+.focused
+{
+   position:fixed;
+  top:52%;
+  left:16%;
+
+
+}
 
 }
 @media only screen and (min-width: 320px) and (max-width: 590px)
