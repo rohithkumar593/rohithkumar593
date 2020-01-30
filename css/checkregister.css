@@ -50,7 +50,7 @@ h1 {
 .groups
 {
 
-  position: absolute;
+  position: fixed;
   top:33%;
   left:20%;
 }
@@ -181,7 +181,7 @@ label::before {
 {
   .groups
   {
-    position:absolute;
+    position:fixed;
     top:20%;
   }
  html
