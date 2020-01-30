@@ -50,9 +50,8 @@ h1 {
 .groups
 {
 
-  position: absolute;
-  top:33%;
-  left:20%;
+  position: relative;
+  transform:translate(-65%,0%);
 }
 .groups input
 {
@@ -207,7 +206,7 @@ label::before {
  .groups
  {
   position: absolute;
- 
+  top:12%;
 
  }
  .groups input
@@ -241,7 +240,7 @@ label::before {
 {
 
   position:absolute;
-  top:70%;
+  top:45%;
   left:16%;
 
   
@@ -258,18 +257,17 @@ span {
 button
 {
   position: absolute;
-  top:85%;
+  top:60%;
   left:43%;
 }
 
 }
 @media only screen and (min-width: 320px) and (max-width: 590px)
 {
-
   .grouping
   {
     position: absolute;
-    top:65%;
+    top:45%;
     left: 16%;
   }
  .group-0
