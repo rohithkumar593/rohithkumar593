@@ -27,7 +27,7 @@ button
 {
   padding:9px 12px;
   position: absolute;
-  top:85%;
+  top:87%;
   left:48%;
   font-size: 15px;
   text-align: center;
@@ -100,7 +100,7 @@ h1 {
 }
 .groups input:focus
 {
-  padding:5pt 20pt;
+ /* padding:5pt 20pt;*/
 }
 .groups-0
 {
@@ -198,7 +198,7 @@ label::before {
   .groups
   {
     position:fixed;
-    top:6%;
+    top:10%;
  
   
   }
@@ -257,7 +257,7 @@ label::before {
 }
 .groups input:focus
 {
-   padding: 17px 60px;
+  /* padding: 17px 60px;*/
 }
 .grouping
 {
