@@ -181,8 +181,8 @@ label::before {
 {
   .groups
   {
-    position:fixed;
-    top:20%;
+    position:absolute;
+    top:22%;
   }
  html
  {
