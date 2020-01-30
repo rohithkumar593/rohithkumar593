@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Print page</title>
-	<link rel="stylesheet" type="text/css" href="main.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Playball&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Ubuntu+Mono&display=swap" rel="stylesheet">
@@ -21,13 +21,7 @@
 		 else
 		 {
 		 	$(".print").hide();
-		 	var video=document.getElementById("play");
-		 	video.style.visibility="visible";
-		 	video.muted="muted";
-		 	video.load();
-		 	video.play();
-		 	video.onended = function(e) {
- 				 window.location.replace("homepage.html");};
+ 			window.location.replace("homepage.html");
 		 }
 	}
 </script>
@@ -42,14 +36,7 @@
 		<div class="syntax" style="color:white">Enter Cynosure in the above syntax</div><br/><br/><br/><br/>
 		<div class="run"><br/><button onclick="fun();">Run</button></div>
 	</div>
-	<div class="video-container">
-		<video muted id="play" >
-  				<source src="videos/homepagebg.mp4" type="video/mp4" preload="auto">
-  					<source src="videos/homepagebg.gif" type="video/gif">
-				 <source src="videos/homepagebg.ogg" type="video/ogg">
-							Your browser does not support this feature.
- 		</video>
-	</div>
+	
 </div>
 </body>
 </html>

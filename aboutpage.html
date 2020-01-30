@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>About Page</title>
+	
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<link rel="stylesheet" href="css/styling.css"/>
+	<link rel="stylesheet" href="css/styling2.css"/>
+	<link rel="stylesheet" href="css/styling3.css"/>
+        <link rel="stylesheet" href="css/styling4.css"/>
+</head>
+
+<body style="">
+<header style="background-color: black">
+		<div class="logo">
+			<img src="Imgs/logo.png" width="200" height="100">
+		</div>
+		<nav>
+			<ul class="links">
+	            <h4 style="font-size: 35px; margin-inline-start:300px; color: white; font-family: Starjedi">About</h4>
+			</ul>
+			<div class="join float-right">
+		</div></nav>
+		<div class="nav-container">
+		   <div class="nav-icon" >
+			<span></span>
+			<span></span>
+			<span></span>
+		   </div>
+		 </div>
+	</header>
+<div class="full-menu">
+	<div class="fullmenu-content">
+		<ul class="page-menu">
+			<li><a href="homepage.html">Home<span></span><span></span></a></li>
+			<li><a class="active"  href="aboutpage.html">About<span></span><span></span></a></li>
+			<li><a href="events.html">Events<span></span><span></span></a></li>
+			<li><a href="contact.html">Contact<span></span><span></span></a></li>
+			<li><a href="register.html">Register<span></span><span></span></a></li>
+		</ul>
+	</div>
+	<a href="" class="modal-close"></a>
+</div>
+<div class="cd-transition-layer"> 
+	<div class="bg-layer" style="width: 51264px; height: 1152px;"></div>
+</div>
+<div class="wrapper">
+<section class="main" style="height: 960px;">
+	<div class="main-content">
+          <div class="page-box " style="width: 90%;height:auto ;display: flex; flex-direction: column;">
+               <div class="box boxer">
+                        <div class="imagbox">
+                           <img src="Imgs/university-whitelogo.png" width="400px" height="300px" alt="University logo">
+                        </div>
+                        <div class="matter">
+                            <h3>About Sri Venkateswara University</h3>
+                            <p>     Sri Venkateswara University,Tirupati is established in 1954 on the sprawling
+                                campus of 1000 acres with a panaromi and pleasant hill view.The university stands as 
+                                a testimony to the wisdom and foresight of great Visionaries 'Late Sri Tanguturi Prakasham Pantulu,the then chief minister of Andhra and',Late Sri Neelam Sanjiva Reddy
+                                to catter the educational needs and aspirations of the people.
+
+                            </p>
+
+                        </div>
+                </div>
+                <div class="box">
+                       
+                        <div class="matter">
+                            <h3>About CSE Department</h3>
+                            <p>   The department of Computer Science and Engineering was started in the year 1986-87
+                                .This department is offering Undergraduate courses in Computer Science and Engineering
+                                and Postgraduate course in Computer Science and Engineering and Postgraduate course in 
+                                Computer Science and Engineering started in the year 2005
+
+                            </p>
+
+                        </div>
+                        <div class="imagbox-1">
+                                  <img src="Imgs/csedepartment.png" width="400px" height="300px" alt="CSE LOGO">
+
+                        </div>
+                </div>
+                <div class="box">
+                            <div>
+                                 <img src="Imgs/cynosure-about.png" width="400px" height="300px" alt="CYNOSURE LOGO">
+                 
+                        </div>
+                        <div class="matter">
+                            <h3>About Cyosure Technical Fest</h3>
+                            <p style="margin-bottom: 30px;">  
+                                Cynosure 2020 is a multifaceted technical fest organised to bring out the real talent.
+                                This takes you into a whole new world combined with exciting events,unbelievable experience,flaw less creative designs tantalizing quizzes and feet trapping brain teasers.The whole technological ride promises you an awesome experience which is 
+                                going to be "now or never",and leaves an impression in your minds.
+                            </p>
+                            <p >So come join us and have fun filled with great enthusiasm</p>
+
+                        </div>
+                    </div>
+                
+                
+                    
+          </div>
+          
+    </div>
+
+	 
+	 
+</section>
+</div>
+
+<script src="jquery-2.1.4.min.js"></script>
+ 
+ <script>
+ 'use strict'; 
+
+$(document).ready( function() {
+ 
+	
+
+    var width = 100,
+        perfData = window.performance.timing, 
+        EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
+        time = ((EstimatedTime/1000)%50) * 100
+
+
+    // Percentage Increment Animation
+    var PercentageID = $(".percentage"),
+            start = 0,
+            end = 100,
+            durataion = time;
+            animateValue(PercentageID, start, end, durataion);
+
+    function animateValue(id, start, end, duration) {
+
+        var range = end - start,
+          current = start,
+          increment = end > start? 1 : -1,
+          stepTime = Math.abs(Math.floor(duration / range)),
+          obj = $(id);
+
+
+        var timer = setInterval(function() {
+            current += increment;
+            $(obj).text(current);
+          //obj.innerHTML = current;
+            if (current == end) {
+                clearInterval(timer);
+            }
+        }, stepTime);
+    }
+    
+
+    
+	
+    
+
+
+   // FADE OUT EFFECT WHEN CLICK A LINK
+    $(document).on("click", "a:not(.lightbox)", function () {
+        var newUrl = $(this).attr("href");
+        if (!newUrl || newUrl[0] === "#") {
+            location.hash = newUrl;
+            return;
+        }
+        $("html").fadeOut(function () {
+            location = newUrl;
+        });
+        return false;
+    });
+    
+
+    var paget = $(".page-title .title").text();
+
+    $( ".page-title").append("<span></span>");
+    $( ".page-title span").append(paget);
+
+
+    
+    //posts page hover 
+    $('.blog-post .blog-link').hover(function(){
+        $(this).parent('.content-outter').parent('.blog-post').toggleClass('mousef');
+        $(this).parent('.blog-post').toggleClass('mousef');
+    });
+ 
+});  
+
+
+
+
+$(window).load( function() {
+ 
+
+function smokeeffect () { 
+    var modalTrigger = $('.nav-icon'),
+        transitionLayer = $('.cd-transition-layer'),
+        transitionBackground = transitionLayer.children(),
+        modalWindow = $('.full-menu');
+
+    var frameProportion = 1.78, //png frame aspect ratio
+        frames = 25, //number of png frames
+        resize = false;
+
+    //set transitionBackground dimentions
+    setLayerDimensions();
+    $(window).on('resize', function(){
+        if( !resize ) {
+            resize = true;
+            (!window.requestAnimationFrame) ? setTimeout(setLayerDimensions, 300) : window.requestAnimationFrame(setLayerDimensions);
+        }
+    });
+
+    //open modal window
+    modalTrigger.on('click', function(event){   
+        event.preventDefault();
+        transitionLayer.addClass('visible opening');
+        var delay = ( $('.no-cssanimations').length > 0 ) ? 0 : 600;
+        setTimeout(function(){
+            modalWindow.addClass('visible');
+        }, delay);
+    });
+
+    //close modal window
+    modalWindow.on('click', '.modal-close', function(event){
+        event.preventDefault();
+        transitionLayer.addClass('closing');
+        modalWindow.removeClass('visible');
+        transitionBackground.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(){
+            transitionLayer.removeClass('closing opening visible');
+            transitionBackground.off('webkitAnimationEnd oanimationend msAnimationEnd animationend');
+        });
+    });
+
+    function setLayerDimensions() {
+        var windowWidth = $(window).width(),
+            windowHeight = $(window).height(),
+            layerHeight, layerWidth;
+
+        if( windowWidth/windowHeight > frameProportion ) {
+            layerWidth = windowWidth;
+            layerHeight = layerWidth/frameProportion;
+        } else {
+            layerHeight = windowHeight*1.2;
+            layerWidth = layerHeight*frameProportion;
+        }
+
+        transitionBackground.css({
+            'width': layerWidth*frames+'px',
+            'height': layerHeight+'px',
+        });
+
+        resize = false;
+    }
+
+}
+smokeeffect()
+
+ 
+    
+/*--------------------------------------------------
+ Hero Section Height
+---------------------------------------------------*/	
+     function homeh() {
+        var hometext = $('.main')
+
+        hometext.css({
+            "height": $(window).height() + "px"
+        });
+    }
+    homeh();
+    $(window).resize(homeh);
+
+
+    $( ".page-menu li:not(.social) a, .portfolio_filter ul li a").append( "<span></span>" );
+
+    $('.nav-icon').on("click", function(){
+            $(this).toggleClass('modal-close');
+    });
+ 
+ 
+     
+}); // document load end 
+
+
+
+
+  
+</script>
+
+    
+
+</body></html>
