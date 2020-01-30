@@ -3,12 +3,24 @@
    font-family:Starjedi;
   src: url(Starjedi.ttf);
 }
+html
+{
+
+}
 body {
   display: flex;
   overflow: hidden;
   background:url(bg.jpg);
-  background-repeat: no-repeat;
+  background-image: url('bg.jpg'); 
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-attachment: fixed;       
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  height: 100%;
+  width: 100%; 
   color: white;
 }
 
@@ -190,140 +202,206 @@ label::before {
   top:60%;
   left:30%;
 }
-@media only screen and (max-width: 1024px)
+@media only screen and (max-width:767px)
 {
-  .continent
-  {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .footer
-  {
-    position: relative;
-  }
-  .groups
-  {
-    position:fixed;
-    top:10%;
- 
-  
-  }
- html
- {
-  width: 100%;
-  height: 105vh;
- }
- .headinglogo
- {
-  width: 100%;
-  height:20%;
- }
- h1
- {
-  position: absolute;
-  left:33%;
-  top:2%;
- }
- form
- {
-  width: 100%;
-  height: 80%;
- }
- h1
- {
-  font-size:5vw;
- }
- .groups
- {
-  
 
- }
- .groups input
+      html,body
+        {
+          height: 100%;
+          width: 100%;
+        }
+        body {
+
+        overflow-y: hidden;
+        background:url(bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+      }
+      h1 {
+        position: absolute;
+        left: 25%;
+        top:15%;
+        font-size: 24px;
+        color: white;
+        letter-spacing: 2px;
+        font-family: Starjedi;
+        margin: 0 0 1em;
+      }
+      .groups
+      {
+        position: absolute;
+        top: 25%;
+        left:0%;
+        display: flex;
+        flex-direction: column;
+      }
+      .groups-0,.groups-1,.groups-2
+      {
+
+      display: flex;
+        flex-direction: column;
+      }
+      .grouping
+      {
+        display: flex;
+        flex-direction: column;
+
+
+      }
+      .group-0,.group-1,.group-2
+      {
+        display: flex;
+        flex-direction: row;
+        
+      }
+      .grouping
+      {
+        font-size: 11px;
+      }
+      .group-1
+      {
+       
+        
+      }
+      .group-2
+      {
+        
+      }
+      .groups input
+      {
+         background-color: transparent;
+         position: relative;
+         border: 2px solid white;
+          margin-bottom:20px;
+         
+          font-family:serif;
+          
+          text-align: center;
+          color:white;
+          font-size: 10px;
+          text-transform: uppercase;
+          border-radius: 5px;
+
+      }
+
+      .checkgroup .grouping
+      {
+       display: flex;
+       flex-direction: column;
+       
+      }
+      .groups input
 {
    background-color: transparent;
    position: relative;
-   border: 3px solid white;
-    margin-bottom:40px;
-    display: inline;
+   border: 2px solid white;
+    margin-bottom:20px;
+   
     font-family:serif;
-    margin-left: 33%;
-    padding: 17px 40px;
+    
     text-align: center;
     color:white;
-    text-shadow: 3pt;
-    font-size: 15pt;
+    font-size: 10px;
     text-transform: uppercase;
-    border-radius: 10pt;
+    border-radius: 5px;
 
-}
-.groups-0,.groups-1,.groups-2
-{
-  display: flex;
-  flex-direction: column;
-}
-.groups input:focus
-{
-   padding: 17px 60px;
-}
-.grouping
-{
-
-  position:fixed;
-  top:45%;
-  left:16%;
-
-  
 }
 span {
-  width:100%;
+
   position: relative;
-  margin-right: 1em;
-  padding-left: 2em;
-  padding-right: 1em;
-  line-height: 2;
+  margin-right: 0.5em;
+  padding-left: 1em;
+  padding-right: 0.5em;
+  line-height: 1;
   cursor: pointer;
 }
-button
+span:before {
+    box-sizing: border-box;
+    content: " ";
+    position: absolute;
+    top: 0.1em;
+    left: 0;
+    display: block;
+    width: 1.0em;
+    height: 1.0em;
+    border: 1px solid white;
+    border-radius: .25em;
+    z-index: -1;
+  
+}
+input[type="radio"] + span::before {
+  text-align: center;
+  border-radius: 1em;
+}
+input[type="checkbox"]:checked + span{
+  padding-left: 0.5em;
+  color:#8e44ad;
+}
+input[type="checkbox"]:checked + span:before {
+     position: absolute;
+ content:"";
+ top:0;
+ bottom:0;
+ background:black;
+ left:0;
+ right:0;
+ margin:auto;
+ width:100%;
+ height:100%;
+    top: 0;
+    height: 1em;
+    background: white;
+  }
+
+input[type="checkbox"]:checked + .text
 {
-  position: absolute;
-  top:60%;
-  left:43%;
+  position: relative;
+  top:50%;
 }
-.focused
+
+
+      .group-0
+      { 
+      display: flex;
+      flex-direction: row;
+      position: fixed;
+      top:55%;
+    left:0%;
+
+      }
+      .group-1
+      {
+        display: flex;
+      flex-direction: row;
+      position: fixed;
+      top:60%;
+      left:-20%;
+      }
+      .group-2
+      {
+        display: flex;
+      flex-direction: row;
+       position: fixed;
+      top:65%;
+      left:-20%;
+      }
+      button
+      {
+        position: fixed;
+        top:70%;
+        left:25%;
+      }
+}
+@media only screen and (min-width: 319px) and (max-width: 359px)
 {
-   position:fixed;
-  top:52%;
-  left:16%;
-
-
-}
-.footer{
- position: relative;
-}
-html,body {
-    height: 100%; /* Needed for container's min-height  */  
-}
-
-.container{
-    min-height:100%;
-    margin-bottom: -40px; /* Put negative height of the footer here */
-    padding-bottom: 40px; /* Put height of the footer here. Needed for higher than screen height pages */
-}
-
-}
-@media only screen and (min-width: 320px) and (max-width: 590px)
-{
-
   .grouping
   {
-    position: absolute;
-    top:45%;
-    left: 16%;
+    font-size: 7px;
+    margin-left:10px;
   }
- .group-0
- {
-  display: flex;
-  flex-direction: column;
- }
 
 }
+        
+
+
