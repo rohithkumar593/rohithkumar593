@@ -11,6 +11,7 @@ body {
   background-size: cover;
   color: white;
 }
+
 .footer{
 
 }
@@ -191,6 +192,11 @@ label::before {
 }
 @media only screen and (max-width: 1024px)
 {
+  .continent
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .footer
   {
     position: relative;
@@ -257,7 +263,7 @@ label::before {
 }
 .groups input:focus
 {
-  /* padding: 17px 60px;*/
+   padding: 17px 60px;
 }
 .grouping
 {
