@@ -197,10 +197,10 @@ label::before {
   }
   .groups
   {
-    position:relative;
-    top:15%;
+    position:fixed;
+    top:10%;
  
-    margin-bottom: 20px;
+  
   }
  html
  {
