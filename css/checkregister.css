@@ -246,6 +246,16 @@ label::before {
 
   
 }
+input:focus 
+{
+  .grouping
+  {
+   position:absolute;
+  top:55%;
+  left:16%; 
+  }
+
+}
 span {
   width:100%;
   position: relative;
