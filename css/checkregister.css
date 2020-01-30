@@ -207,7 +207,7 @@ label::before {
  .groups
  {
   position: absolute;
-  top:12%;
+ 
 
  }
  .groups input
@@ -241,20 +241,10 @@ label::before {
 {
 
   position:absolute;
-  top:45%;
+  top:70%;
   left:16%;
 
   
-}
-input:focus 
-{
-  .grouping
-  {
-   position:absolute;
-  top:55%;
-  left:16%; 
-  }
-
 }
 span {
   width:100%;
@@ -268,17 +258,18 @@ span {
 button
 {
   position: absolute;
-  top:60%;
+  top:85%;
   left:43%;
 }
 
 }
 @media only screen and (min-width: 320px) and (max-width: 590px)
 {
+
   .grouping
   {
     position: absolute;
-    top:45%;
+    top:65%;
     left: 16%;
   }
  .group-0
