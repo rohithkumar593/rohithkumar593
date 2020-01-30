@@ -40,12 +40,8 @@
  <h1 style="font-family: Starjedi">Registration </h1>
  <img src="Imgs/logo.png" width="200px" height="100px" alt="logo"/>
 </div>
-<script type="text/javascript">
-  $('input[type="text"]').on('focus', function() {
-    $('.grouping').addClass('focused');
-});
-</script>
 <form class="form-details" id="myform" onsubmit="">
+  <div class="container">
       <div class="groups">
         <div class="groups-0">
           <div class="name">
@@ -65,7 +61,8 @@
                </div>
         </div>
       </div>
-               <button type="button" onclick="register();">Proceed and Pay</button>
+    </div>
+    <div class="footer">  
 
         <div class="checkgroup">
          <div class="grouping" >
@@ -105,7 +102,8 @@
 </div>
 </div>
   
-
+</div>
+ <button type="button" onclick="register();">Proceed and Pay</button>
 </form>
         
 </body>

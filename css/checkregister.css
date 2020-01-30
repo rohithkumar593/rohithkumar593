@@ -179,10 +179,22 @@ label::before {
 }
 @media only screen and (max-width: 1024px)
 {
+  .footer{
+ position: relative;
+}
+html,body {
+    height: 100%; /* Needed for container's min-height  */  
+}
+
+.container{
+    min-height:100%;
+    margin-bottom: -40px; /* Put negative height of the footer here */
+    padding-bottom: 40px; /* Put height of the footer here. Needed for higher than screen height pages */
+}
   .groups
   {
-    position: relative;
-    transform: translate(-80%,40%);
+    position: fixed;
+    transform: translate(-10%,-90%);
   }
  html
  {
@@ -209,11 +221,7 @@ label::before {
  {
   font-size:5vw;
  }
- .groups
- {
-  
 
- }
  .groups input
 {
    background-color: transparent;
@@ -244,8 +252,9 @@ label::before {
 .grouping
 {
 
+
   position:fixed;
-  top:49%;
+  top:45%;
   left:16%;
 
   
@@ -264,14 +273,6 @@ button
   position: absolute;
   top:60%;
   left:43%;
-}
-.focused
-{
-   position:fixed;
-  top:52%;
-  left:16%;
-
-
 }
 
 }
