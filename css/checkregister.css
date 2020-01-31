@@ -24,25 +24,21 @@ body {
   color: white;
 }
 
-.footer{
 
-
-}
 html,body {
     height: 100%; /* Needed for container's min-height  */  
 }
 
-.container{
-    min-height:100%;
-    margin-bottom: -40px; /* Put negative height of the footer here */
-    padding-bottom: 40px; /* Put height of the footer here. Needed for higher than screen height pages */
+
+.checkgroup
+{
+
 }
+
 button
 {
   padding:9px 12px;
-  position: absolute;
-  top:90%;
-  left:44%;
+  
   font-size: 15px;
   text-align: center;
   cursor: pointer;
@@ -53,6 +49,9 @@ button
   border-radius: 15px;
   box-shadow: 0 9px #999;
   cursor: pointer;
+  position: absolute;
+  top:89%;
+  left:50%;
 
 }
 button:hover {
@@ -119,6 +118,7 @@ h1 {
 .groups-0
 {
   display: flex;
+
 }
 .groups-1
 {
@@ -202,9 +202,17 @@ label::before {
   position:absolute;
   top:60%;
   left:30%;
+  display: flex;
+  flex-wrap: wrap;
 }
 @media only screen and (max-width:767px)
 {
+     button
+     {
+      position: absolute;
+      top:88%;
+      left:25%;
+     }
   
 
       html,body
@@ -237,6 +245,7 @@ label::before {
         left:0%;
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
       }
       .groups-0,.groups-1,.groups-2
       {
@@ -247,6 +256,7 @@ label::before {
       .grouping
       {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
 
 
@@ -291,6 +301,7 @@ label::before {
       {
        display: flex;
        flex-direction: column;
+       flex-wrap: wrap;
        
       }
       .groups input
