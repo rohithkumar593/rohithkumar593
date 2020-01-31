@@ -15,7 +15,7 @@ body {
   background-repeat: no-repeat; 
   background-position: center;
   background-attachment: fixed;       
-  webkit-background-size: cover;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -25,6 +25,7 @@ body {
 }
 
 .footer{
+
 
 }
 html,body {
@@ -204,11 +205,7 @@ label::before {
 }
 @media only screen and (max-width:767px)
 {
-     button
-     {
-      margin-top: -20px;
-      margin-left: 20px;
-     }
+  
 
       html,body
         {
@@ -393,9 +390,9 @@ input[type="checkbox"]:checked + .text
       }
       button
       {
-        position: fixed;
-        top:70%;
-        left:25%;
+       align-self: flex-end;
+
+        
       }
       img
       {
@@ -405,6 +402,11 @@ input[type="checkbox"]:checked + .text
 }
 @media only screen and (min-width: 319px) and (max-width: 359px)
 {
+  h1
+  {
+    font-size: 15px;
+    margin-left: 25px;
+  }
   .grouping
   {
     font-size: 7px;
