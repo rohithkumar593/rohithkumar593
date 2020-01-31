@@ -40,8 +40,8 @@ button
 {
   padding:9px 12px;
   position: absolute;
-  top:87%;
-  left:48%;
+  top:90%;
+  left:44%;
   font-size: 15px;
   text-align: center;
   cursor: pointer;
@@ -204,6 +204,11 @@ label::before {
 }
 @media only screen and (max-width:767px)
 {
+     button
+     {
+      margin-top: -20px;
+      margin-left: 20px;
+     }
 
       html,body
         {
