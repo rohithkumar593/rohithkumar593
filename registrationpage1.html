@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <style type="text/css">
+    @font-face
+{
+    font-family: "Starjedi";
+    src:url(css/fonts/Starjedi.ttf);
+    font-style: normal;
+    font-weight: 200px;   
+}
+  </style>
+  <title>items click event</title>
+  <link rel="stylesheet" href="css/checkregister.css"/>
+  <script type="text/javascript" src="jquery.js">
+     $('body').on('focus', 'input', function(event) {
+        var altura = $(window).height();
+        var scrollp = parseInt(parseInt(altura)/100*38);
+        $("#container").css("height",scrollp + "px");
+        window.scrollTo(0,document.body.scrollHeight);
+    });
+  </script>
+   <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="form.js"></script>
+  
+ 
+  <script>
+    function validate_form()
+  {
+     valid = true;
+
+  if($('input[type=checkbox]:checked').length == 0)
+  {
+    alert ( "ERROR! Please select at least one checkbox" );
+    valid = false;
+  }
+
+  return valid;
+}
+  </script>
+</head>
+<body>
+ <div class="box">
+<div class="headinglogo box-00">
+ <h1 style="font-family: Starjedi">Registration </h1>
+ <img src="Imgs/logo.png" width="200px" height="100px" alt="logo"/>
+</div>
+<form class="form-details" id="myform" onsubmit="">
+   <div class="grouping box-1" >
+          <div class="group-0" style="margin-bottom: 30px;">
+          <label class="checkbox">
+            <input type="checkbox" id="QueryCrackers" name="Query Crackers"><span class="text">Query Crackers</span></label>
+          <label class="checkbox">
+              <input type="checkbox" id="Quizzotica" name="Quizzotica"><span class="text">Quizzotica</span>
+          </label>
+           <label class="checkbox">
+              <input type="checkbox" id="PraxisPlacement" name="Praxis Placement"><span class="text">Praxis Placement</span>
+          </label>
+           <label class="checkbox">
+              <input type="checkbox" id="PaperPresentation" name="Paper Presentation"><span class="text">Paper Presentation</span>
+          </label>
+        </div>
+        <div class="group-1" style="margin-bottom: 20px; margin-inline-start:120px">
+           <label class="checkbox">
+              <input type="checkbox" id="WebWreathe" name="Web Wreathe"><span class="text">Web Wreathe</span>
+          </label>
+           <label class="checkbox">
+              <input type="checkbox" id="DazzleCoding" name="Dazzle Coding"><span class="text">Dazzle Coding</span>
+          </label>
+           <label class="checkbox">
+              <input type="checkbox" id="TechTambola" name="Tech Tambola"><span class="text">Tech Tambola</span>
+          </label>
+        </div>
+        <div class="group-2" style="margin-bottom: 20px; margin-inline-start: 180px">
+           <label class="checkbox">
+              <input type="checkbox" id="CaperWithCipher" name="Caper with Cipher"><span class="text">Caper with Cipher</span>
+          </label>
+           <label class="checkbox">
+              <input type="checkbox" id="CodeWarriors" name="Code Warriors"><span class="text">Code Warriors</span>
+          </label>
+         
+
+          </div>
+</div>
+    <div class="box-0">
+      <div class="groups">
+        <div class="groups-0">
+          <div class="name">
+                <input type="text" id="name" name="Name" placeholder="Name" required data-required="true" data-error-message="name is missing" ><br>
+          </div>
+          <div class="email">
+                <input type="text" id="email" name="email" placeholder="E-mail" data-required="true" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" data-error-message="E-mail is missing"><br/>
+          </div>
+        </div>
+        <div class="groups-1">
+               <div class="mobile">
+                <input type="number" id="mobile" name="mobile" placeholder="Mobile No."data-required="true" data-error-message="mobile no. is missing" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br/>
+               </div>
+               <div class="collegename">
+    
+                <input type="text" id="clg" name="Collegename" placeholder="College Name"  required data-required="true" data-error-message=" College name is missing">
+               </div>
+        </div>
+      </div>
+      </div>
+   
+
+ <div class="box-2">
+   <button type="button" onclick="register();">Proceed and Pay</button>
+</div>
+</div>
+</form>
+        
+</body>
+</html>
