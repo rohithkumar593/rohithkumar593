@@ -180,7 +180,7 @@ span:before {
     border-radius: .25em;
     z-index: -1;
   }
-}
+
 
 input[type="checkbox"]:checked + span {
     padding-left: 1em;
@@ -198,10 +198,12 @@ input[type="checkbox"]:checked + span:before {
  height:100%;
     top: 0;
     height: 2em;
-    background: white;
+    background-color: white;
+
+  
 
   }
-}
+
 input[type="checkbox"]:checked + .text
 {
   position: relative;
@@ -216,4 +218,5 @@ label::before {
   -webkit-transition: .25s all ease;
   -o-transition: .25s all ease;
   transition: .25s all ease;
+}
 }

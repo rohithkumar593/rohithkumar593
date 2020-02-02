@@ -113,9 +113,9 @@ img
       span {
 
   position: relative;
-  margin-right: 0.5em;
+  margin-right: 1em;
   padding-left: 1em;
-  padding-right: 0.5em;
+  padding-right: 1em;
   line-height: 1;
   cursor: pointer;
 }
@@ -139,14 +139,14 @@ input[type="radio"] + span::before {
 }
 input[type="checkbox"]:checked + span{
   padding-left: 0.5em;
-  
+  color:#8e44ad;
 }
 input[type="checkbox"]:checked + span:before {
      position: absolute;
  content:"";
  top:0;
  bottom:0;
- background:black;
+
  left:0;
  right:0;
  margin:auto;
@@ -154,7 +154,7 @@ input[type="checkbox"]:checked + span:before {
  height:100%;
     top: 0;
     height: 1em;
-    background: white;
+  
   }
 
 input[type="checkbox"]:checked + .text
