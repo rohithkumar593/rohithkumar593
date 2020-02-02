@@ -93,7 +93,7 @@
 }
 .grouping
 {
-  font-size: 8px;
+  font-size: 7px;
 }
 img
       {
@@ -165,12 +165,4 @@ input[type="checkbox"]:checked + .text
 
 
 }
-@media only screen and (min-width: 319px) and (max-width: 358px)
-{
-   
-  .grouping
-  {
-    font-size: 7px;
-    
-  }
-}
+
