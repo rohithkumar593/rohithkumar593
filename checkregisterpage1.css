@@ -93,7 +93,7 @@
 }
 .grouping
 {
-  font-size: 7px;
+  font-size: 9px;
 }
 img
       {
@@ -112,12 +112,17 @@ img
       }
       span {
 
-  position: relative;
-  margin-right: 0.75em;
-  padding-left: 1em;
-  padding-right: 0.75em;
-  line-height: 1;
-  cursor: pointer;
+position: relative;
+
+/* margin-right: 1em; */
+
+padding-left: 1em;
+
+padding-right: 1em;
+
+line-height: 1;
+
+cursor: pointer;
 }
 span:before {
     box-sizing: border-box;
@@ -164,4 +169,22 @@ input[type="checkbox"]:checked + .text
 }
 
 
+}
+@media only screen and (min-width: 319px) and (max-width: 358px)
+{
+   
+  .grouping
+  {
+    font-size: 7px;
+    
+  }
+}
+@media only screen and (min-width: 359px) and (max-width: 479px)
+{
+   
+  .grouping
+  {
+    font-size: 8px;
+    
+  }
 }
