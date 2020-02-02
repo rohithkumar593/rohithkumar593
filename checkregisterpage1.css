@@ -113,9 +113,9 @@ img
       span {
 
   position: relative;
-  margin-right: 1em;
+  margin-right: 0.75em;
   padding-left: 1em;
-  padding-right: 1em;
+  padding-right: 0.75em;
   line-height: 1;
   cursor: pointer;
 }
