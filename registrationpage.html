@@ -46,37 +46,13 @@
   </script>
 </head>
 <body>
-<div class="headinglogo">
+ <div class="box">
+<div class="headinglogo box-00">
  <h1 style="font-family: Starjedi">Registration </h1>
  <img src="Imgs/logo.png" width="200px" height="100px" alt="logo"/>
 </div>
 <form class="form-details" id="myform" onsubmit="">
-<div class="continent">
-<div class="container">
-      <div class="groups">
-        <div class="groups-0">
-          <div class="name">
-                <input type="text" id="name" name="Name" placeholder="Name" required data-required="true" data-error-message="name is missing" ><br>
-               </div>
-               <div class="email">
-                <input type="text" id="email" name="email" placeholder="E-mail" data-required="true" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" data-error-message="E-mail is missing"><br/>
-               </div>
-          </div>
-        <div class="groups-1">
-               <div class="mobile">
-                <input type="number" id="mobile" name="mobile" placeholder="Mobile No."data-required="true" data-error-message="mobile no. is missing" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br/>
-               </div>
-               <div class="collegename">
-    
-                <input type="text" id="clg" name="Collegename" placeholder="College Name"  required data-required="true" data-error-message=" College name is missing">
-               </div>
-        </div>
-      </div>
-    </div>
-  
-
-      <div class="checkgroup">
-         <div class="grouping" >
+   <div class="grouping box-1" >
           <div class="group-0" style="margin-bottom: 30px;">
           <label class="checkbox">
             <input type="checkbox" id="QueryCrackers" name="Query Crackers"><span class="text">Query Crackers</span></label>
@@ -110,14 +86,34 @@
           </label>
          
 
+          </div>
 </div>
-</div>
+    <div class="box-0">
+      <div class="groups">
+        <div class="groups-0">
+          <div class="name">
+                <input type="text" id="name" name="Name" placeholder="Name" required data-required="true" data-error-message="name is missing" ><br>
+          </div>
+          <div class="email">
+                <input type="text" id="email" name="email" placeholder="E-mail" data-required="true" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" data-error-message="E-mail is missing"><br/>
+          </div>
+        </div>
+        <div class="groups-1">
+               <div class="mobile">
+                <input type="number" id="mobile" name="mobile" placeholder="Mobile No."data-required="true" data-error-message="mobile no. is missing" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br/>
+               </div>
+               <div class="collegename">
+    
+                <input type="text" id="clg" name="Collegename" placeholder="College Name"  required data-required="true" data-error-message=" College name is missing">
+               </div>
+        </div>
+      </div>
+      </div>
+   
 
-</div>
-
-</div>
- <div class="footer">
+ <div class="box-2">
    <button type="button" onclick="register();">Proceed and Pay</button>
+</div>
 </div>
 </form>
         

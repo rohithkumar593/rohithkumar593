@@ -207,10 +207,45 @@ label::before {
 }
 @media only screen and (max-width:767px)
 {
+  *
+  {
+    box-sizing: content-box;
+  }
+     .box
+     {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+     }
+    .box-00
+    {
+      width: 100%;
+      height: 20%;
+    }
+     .box-0
+     {
+      width:100%;
+      height: 35%;
+     }
+     .box-1
+     {
+      width: 100%;
+      height: 35%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+     }
+     .box-2
+     {
+      width: 100%;
+      height: 10%;
+
+     }
+
      button
      {
       position: absolute;
-      top:88%;
+      top:90%;
       left:25%;
      }
   
@@ -241,8 +276,8 @@ label::before {
       .groups
       {
         position: absolute;
-        top: 40%;
-        left:0%;
+        top: 45%;
+        left:10%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -380,7 +415,7 @@ input[type="checkbox"]:checked + .text
       flex-direction: row;
       position: fixed;
       top:20%;
-    left:0%;
+   
 
       }
       .group-1
@@ -389,7 +424,7 @@ input[type="checkbox"]:checked + .text
       flex-direction: row;
       position: fixed;
       top:25%;
-      left:-20%;
+   
       }
       .group-2
       {
@@ -397,7 +432,7 @@ input[type="checkbox"]:checked + .text
       flex-direction: row;
        position: fixed;
       top:30%;
-      left:-20%;
+     
       }
       button
       {
@@ -411,8 +446,9 @@ input[type="checkbox"]:checked + .text
         height: 80px;
       }
 }
-@media only screen and (min-width: 319px) and (max-width: 359px)
+@media only screen and (min-width: 319px) and (max-width: 360px)
 {
+   
   h1
   {
     font-size: 15px;
