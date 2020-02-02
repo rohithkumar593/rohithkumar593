@@ -182,16 +182,15 @@ span:before {
   }
 }
 
-input[type="checkbox"]:checked + span{
-  padding-left: 1em;
-  color:#8e44ad;
+input[type="checkbox"]:checked + span {
+    padding-left: 1em;
+    color: #8e44ad;
 }
 input[type="checkbox"]:checked + span:before {
      position: absolute;
  content:"";
  top:0;
  bottom:0;
- background:black;
  left:0;
  right:0;
  margin:auto;
@@ -200,12 +199,17 @@ input[type="checkbox"]:checked + span:before {
     top: 0;
     height: 2em;
     background: white;
+
   }
 }
 input[type="checkbox"]:checked + .text
 {
   position: relative;
   top:50%;
+
+}
+input[type="checkbox"]:checked {
+  color: black;
 }
 label,
 label::before {

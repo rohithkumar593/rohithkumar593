@@ -93,7 +93,7 @@
 }
 .grouping
 {
-  font-size: 7px;
+  font-size: 9px;
 }
 img
       {
@@ -139,7 +139,7 @@ input[type="radio"] + span::before {
 }
 input[type="checkbox"]:checked + span{
   padding-left: 0.5em;
-  color:#8e44ad;
+  
 }
 input[type="checkbox"]:checked + span:before {
      position: absolute;
@@ -165,4 +165,21 @@ input[type="checkbox"]:checked + .text
 
 
 }
-
+@media only screen and (min-width: 319px) and (max-width: 358px)
+{
+   
+  .grouping
+  {
+    font-size: 7px;
+    
+  }
+}
+@media only screen and (min-width: 359px) and (max-width: 479px)
+{
+   
+  .grouping
+  {
+    font-size: 8px;
+    
+  }
+}
