@@ -1,7 +1,7 @@
 @font-face
 {
    font-family:Starjedi;
-  src: url(Starjedi.ttf);
+  src: url(css/fonts/Starjedi.ttf);
 }
 *
 {
@@ -41,6 +41,8 @@ h1
 {
   text-align: center;
   vertical-align: middle;
+  font-family: Starjedi;
+  letter-spacing: 1px;
 
 }
 .box-0

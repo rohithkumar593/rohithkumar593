@@ -1,0 +1,364 @@
+body
+{
+	background-image:url('background.jpeg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	margin:0;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	position:fixed;
+}
+
+
+@font-face
+{
+	font-family:starjedi;
+	src:url(Starjedi.ttf);
+}
+
+
+#heading {
+	color:white;
+	font-family:starjedi;
+	text-align:center;
+	top:10%;
+	height:10%;
+}
+
+#heading h1
+{
+	padding-top:1%;
+}
+
+#main
+{
+	top:25%;
+	display:block;
+	position:relative;
+	
+}
+
+.arrow 
+{
+	font-size:300%;
+	text-decoration:none;
+	position:relative;
+	display:inline-block;
+	height:300px;
+	float:left;
+	position:center;
+}
+
+
+
+#left-arrow a
+{
+	text-decoration:none;
+	color:white;
+	top:35%;
+	left:70;
+	position:absolute;
+	
+	
+}
+
+#right-arrow
+{
+	right:120;
+	position:absolute;
+}
+
+#right-arrow a
+{
+	text-decoration:none;
+	color:white;
+	top:35%;
+	position:absolute;
+}
+
+.arrow a:hover
+{
+	color:red;
+}
+
+
+#eventsmenu
+{
+	display:inline-block;
+	position:relative;
+	overflow:hidden;
+	white-space:nowrap;
+	width:1200px;
+	height:340px;
+	margin-left:10%;
+}
+
+
+
+.card
+{
+	display:inline-block;
+	width:300px;
+	height:280px;
+	position:relative;
+	margin-left:100px;
+	margin-top:6px;
+	background-color:rgba(0,0,0,0.8);
+	color:white;
+	border-radius:15%;
+	vertical-align:middle;
+}
+
+#event1
+{
+	margin-left:504px;
+}
+
+.card:hover{
+	height:300px;
+	cursor:pointer;
+}
+
+.card img
+{
+	width:60%;
+	height:60%;
+	padding:2%;
+	border-radius:50%;
+	display:block;
+	margin:auto;
+	margin-top:14%;
+}
+
+.card p
+{
+	padding:2%;
+	text-transform:uppercase;
+	text-decoration:none;
+	color:white;
+	text-align:center;
+}
+
+@media screen and (max-width:600px)
+{
+	#eventsmenu
+	{
+		width:75%;
+		margin-left:2%;
+	}
+	
+	#event1
+	{
+		margin-left:10%;
+	}
+	
+	.card{
+		width:80%;
+		margin-left:10%;
+	}
+	
+	#left-arrow a
+	{
+		left:50%;
+	}
+	
+	.arrow
+	{
+		width:10%;
+	}
+}
+
+
+.popevent
+{
+	background-color:#001423;
+	width:100%;
+	height:110%;
+	color:white;
+	margin-top:490px;
+	display:none;
+	color:white;
+	
+	background-size:cover;
+	background-repeat:no-repeat;
+	overflow:auto;
+
+}
+
+.wrong
+{
+	top:2%;
+	right:4%;
+	color:white;
+	font-size:110%;
+	display:none;
+	position:absolute;
+ }
+
+.popevent h1
+{
+	text-align:center;
+	margin:auto;
+	color:white;
+	font-size:300%;
+	font-family:starjedi;
+	padding:3%;
+	letter-spacing:4px;	
+}
+
+.event1img
+{
+	width:20%;
+	height:20%;
+	position:relative;
+	display:inline-block;
+	clear:both;
+	margin-left:9%;
+}
+
+.event1img img
+{
+	width:275px;
+	height:275px;
+	border-radius:25%;
+	clear:both;
+}
+
+.desc
+{
+	font-size:120%;
+	font-family:'Open Sans Condensed', sans-serif;
+	margin-left:5%;
+	display:inline-block;
+	position:relative;
+	width:63%;
+}
+
+
+.contact
+{
+	display:block;
+	margin-top:6%;
+	margin-left:16%
+}
+
+ #popevent3 .contact
+{
+	display:block;
+	margin-top:4%;	
+}
+
+.back{
+	display:none;
+	left:8%;
+	top:8%;
+	width:100px;
+	position:absolute;
+}
+
+.back button
+{
+	border:none;
+	background:none;
+	background-color:white;
+	height:50px;
+	width:50px;
+	border-radius:50%;
+	font-style:bold;
+	font-size:180%;
+	outline:none;
+}
+
+.back button:hover
+{
+	cursor:pointer;
+	height:53px;
+	width:53px;
+	border-radius:50%;
+	box-shadow:0px 0px 4px 8px rgba(179,242,255,0.2);
+}
+
+.back button a
+{
+	text-decoration:none;
+	color:black;
+	outline:none;
+	
+}
+
+
+body::-webkit-scrollbar{
+	display:none;
+}
+
+body 
+{
+	-ms-overflow-style: none;	
+}
+
+.popevent::-webkit-scrollbar{
+	display:none;
+}
+
+.contactname
+{
+	display:inline-block;
+	width:300px;
+	position:relative;
+	margin-left:16%;
+	color:white;
+	vertical-align:middle;
+}
+
+.contactname a
+{
+	text-decoration:none;
+	color:white;
+}
+
+@media screen and (max-width:600px)
+{
+	body{
+		position:relative;
+	}
+	.event1img
+	{
+		width:50%;
+		height:20%;
+	}
+	.event1img img{
+		height:75%;
+		width:75%;
+	}
+	
+	.contact
+	{
+		height:25%;
+		
+	}
+	.desc{
+		width:100%;
+		top:5%;
+		position:relative;
+		left:4%;
+		right:4%;
+	}
+	.back
+	{
+		margin-top:0;
+		display:none;
+	}
+	.wrong
+	{
+		display:block;
+	}
+	
+	.card:hover
+	{
+		width:80%;
+		margin-left:10%;
+	}
+	
+}

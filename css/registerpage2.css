@@ -76,13 +76,26 @@ body
  body
 {
 
- height: 200vh;
-  background: url(bg.jpg);
-  background-position: fixed;
-  width: 100%;
-  min-height:100%;
-  background-size: cover;
+/* height: 200vh; */
 
+background: url(bg.jpg);
+
+background-position: fixed;
+
+width: 100%;
+
+min-height:100%;
+
+background-size: cover;
+}
+
+img {
+    visibility: hidden;
+}
+
+body {
+    overflow: hidden;
+    padding-bottom: 70%;
 }
  #page-0
 {
