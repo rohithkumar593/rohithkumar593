@@ -124,14 +124,18 @@ h3
 
 @media only screen and (max-width: 1024px)
 {
-	body
-	{
-	min-height: 120vh;
-    margin:0px;
-    background: url(css/bg.jpg) no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-	}
+	body {
+  margin: 0;
+  padding: 0;
+  }
+div.img {
+  background-image: url('css/bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+  }
 	h3
 	{
 		font-size: 25px;
