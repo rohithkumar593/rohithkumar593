@@ -1,0 +1,23 @@
+.contactbox
+{
+	position: absolute;
+	top:30%;
+	left:10%;
+	width: 90%;
+	height: 60%;
+	
+}
+.contactbox 
+{
+
+	font-size: 26px;
+}
+.contactbox p,.contactbox div
+{
+	margin-bottom: 5%;
+
+}
+.contactbox a
+{
+	margin-right: 10%;
+}
