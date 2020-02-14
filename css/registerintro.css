@@ -7,6 +7,7 @@ body
 	position: absolute;
 	top:30%;
 	left:10%;
+	bottom: 10%;
 	background-color: black;
 	width: 70%;
 	height: 60%;
@@ -75,13 +76,25 @@ button
 	position: absolute;
 	position: absolute;
 	top: 20%;
-	
+	left:0;
 	background-color: black;
 	width: 100%;
+	box-sizing: border-box;
 	height:50%;
 	border-radius: 5px;}
+	ul
+	{
+		font-size: 14px;
+	}
+	.content
+
+	{
+		overflow-x: scroll;
+	}
 	.pagebox
+	}
 {
+
 
 	font-size: 14px;
 	font-family: sans-serif;
