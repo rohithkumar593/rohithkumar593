@@ -124,12 +124,26 @@ h3
 
 @media only screen and (max-width: 1024px)
 {
-	.boxer .matter,.boxer1,.boxer2 img
+	body
+	{
+		background-image: none;
+	}
+	.main-content
+	{
+		background:url(css/bg.jpg);
+	}
+	.boxer .matter,.boxer2,.boxer1 img 
 	{
 		display: none;
 	}
+	.boxer .imagbox img
+	{
+		width:250px;
+		height: 120px;
+	}
 	.boxer .matter-0
 	{
+		margin-top: -20%;
 		visibility: visible;
 	}
 
