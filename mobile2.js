@@ -97,7 +97,7 @@ $(document).ready(function(){
 			setTimeout("$('.back').show()",400);}
 			else
 				setTimeout("$('.wrong').show()",400);
-			$("body").css({"backgroundImage":"url('background.jpeg')"});
+			$("body").css({"backgroundImage":"url('images/background.jpeg')"});
 		});
 	$("#event2").click(function()
 		{
@@ -111,7 +111,7 @@ $(document).ready(function(){
 			setTimeout("$('.back').show()",400);}
 			else
 				setTimeout("$('.wrong').show()",400);
-			$("body").css({"backgroundImage":"url('background.jpeg')"});
+			$("body").css({"backgroundImage":"url('images/background.jpeg')"});
 		});
 	$("#event3").click(function()
 		{
@@ -125,7 +125,7 @@ $(document).ready(function(){
 			setTimeout("$('.back').show()",400);}
 			else
 				setTimeout("$('.wrong').show()",400);
-			$("body").css({"backgroundImage":"url('background.jpeg')"});
+			$("body").css({"backgroundImage":"url('images/background.jpeg')"});
 		});
 	$("#event4").click(function()
 		{
@@ -139,7 +139,7 @@ $(document).ready(function(){
 			setTimeout("$('.back').show()",400);}
 			else
 				setTimeout("$('.wrong').show()",400);
-			$("body").css({"backgroundImage":"url('background.jpeg')"});
+			$("body").css({"backgroundImage":"url('images/background.jpeg')"});
 		});
 		
 		$("#event5").click(function()
@@ -154,7 +154,7 @@ $(document).ready(function(){
 			setTimeout("$('.back').show()",400);}
 			else
 				setTimeout("$('.wrong').show()",400);
-			$("body").css({"backgroundImage":"url('background.jpeg')"});
+			$("body").css({"backgroundImage":"url('images/background.jpeg')"});
 		});
 		$("#event6").click(function()
 		{
@@ -168,7 +168,7 @@ $(document).ready(function(){
 			setTimeout("$('.back').show()",400);}
 			else
 				setTimeout("$('.wrong').show()",400);
-			$("body").css({"backgroundImage":"url('background.jpeg')"});
+			$("body").css({"backgroundImage":"url('images/background.jpeg')"});
 		});
 		$("#event7").click(function()
 		{
@@ -182,7 +182,7 @@ $(document).ready(function(){
 			setTimeout("$('.back').show()",400);}
 			else
 				setTimeout("$('.wrong').show()",400);
-			$("body").css({"backgroundImage":"url('background.jpeg')"});
+			$("body").css({"backgroundImage":"url('images/background.jpeg')"});
 		});
 		
 		$("#event8").click(function()
@@ -197,7 +197,7 @@ $(document).ready(function(){
 			setTimeout("$('.back').show()",400);}
 			else
 				setTimeout("$('.wrong').show()",400);
-			$("body").css({"backgroundImage":"url('background.jpeg')"});
+			$("body").css({"backgroundImage":"url('images/background.jpeg')"});
 		});
 		
 		$("#event9").click(function()
@@ -212,7 +212,7 @@ $(document).ready(function(){
 			setTimeout("$('.back').show()",400);}
 			else
 				setTimeout("$('.wrong').show()",400);
-			$("body").css({"backgroundImage":"url('background.jpeg')"});
+			$("body").css({"backgroundImage":"url('images/background.jpeg')"});
 		});
 		
 		$("#event10").click(function()
@@ -227,7 +227,7 @@ $(document).ready(function(){
 			setTimeout("$('.back').show()",400);}
 			else
 				setTimeout("$('.wrong').show()",400);
-			$("body").css({"backgroundImage":"url('background.jpeg')"});
+			$("body").css({"backgroundImage":"url('images/background.jpeg')"});
 		});
 	
 	

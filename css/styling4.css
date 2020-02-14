@@ -161,4 +161,8 @@ h3
 	{
 		padding-bottom: 80px;
 	}
+	body
+	{
+		min-height: fit-content;
+	}
 }

@@ -1,6 +1,6 @@
 body
 {
-	background-image:url('background.jpeg');
+	background-image:url('images/background.jpeg');
 	background-repeat:no-repeat;
 	background-size:cover;
 	margin:0;
@@ -15,7 +15,7 @@ body
 @font-face
 {
 	font-family:starjedi;
-	src:url(Starjedi.ttf);
+	src:url(css/fonts/Starjedi.ttf);
 }
 
 
@@ -174,7 +174,13 @@ body
 		margin-left:2%;
 		margin-top: 0%
 	}
+
 	
+	#heading
+	{
+		font-size: 140%;
+	}
+
 	#event1
 	{
 		margin-left:10%;
@@ -198,6 +204,10 @@ body
 	.arrow
 	{
 		width:10%;
+	}
+	.arrow a:hover
+	{
+		color:white;
 	}
 }
 
@@ -402,7 +412,6 @@ body
 		width:90%;
 		height: 50%;
 		margin-top: 20%;
-
 		left:2%;
 		overflow: auto;
 	}
