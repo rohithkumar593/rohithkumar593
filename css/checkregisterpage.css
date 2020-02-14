@@ -3,18 +3,6 @@
    font-family:Starjedi;
   src: url(css/fonts/Starjedi.ttf);
 }
-.groups
-{
-
-}
-.groups-0
-{
-  display: flex;
-}
-.groups-1
-{
-  display: flex;
-}
 *
 {
   margin: 0;
@@ -76,7 +64,7 @@ h1
 {
   width:60%;
   height:40%;
-  margin-left: 20%;
+  margin:0 auto;
   margin-top:5%;
   box-sizing: border-box;
   
@@ -238,10 +226,4 @@ label::before {
   -o-transition: .25s all ease;
   transition: .25s all ease;
 }
-button
-{
-  margin:0 auto;
-  position: absolute;
-  bottom:10%;
-  left:48%;
 }

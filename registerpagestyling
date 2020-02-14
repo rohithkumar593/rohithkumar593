@@ -1,0 +1,170 @@
+@media only screen and (max-width:1024px)
+{
+
+  h1
+  {
+       margin-top: -40px;
+       margin-left: 15px;
+    
+  }
+
+  button
+  {
+    padding:2px 10px;
+    margin-top: 10px;
+  }
+  *
+  {
+    box-sizing: content-box;
+  }
+  html,body
+  {
+    width: 100%;
+    height: 100%;
+  }
+  .box-10
+  {
+  width:100%;
+  height:40%;
+  margin:0 auto;
+  margin-top:5%;
+  box-sizing: border-box;
+
+  }
+  .groups input
+      {
+
+ 
+         background-color: transparent;
+         border: 2px solid white;
+          margin-bottom:20px;
+          padding:4px 20px;
+          font-family:serif;
+          text-align: center;
+          font-size: 10px;
+          border-radius: 5px;
+
+      }
+    .box
+    {
+      width: 100%;
+      height: 100%;
+    }
+    .box-0
+    {
+  box-sizing: border-box;
+  width: 100%;
+  height:20%;
+  
+  
+  }
+  .box-1
+  {
+  width:100%;
+  height:80%;
+ box-sizing: border-box;
+
+  }
+  .box-11
+{
+  width: 100%;
+  height: 50%;
+  
+
+}
+.box-12
+{
+  width:100%;
+  height: 10%;
+
+
+}
+.grouping
+{
+  width:100%;
+  height:80%;
+  margin: 0 auto;
+
+}
+.group-0,.group-1,.group-2
+{
+  margin-left: 0%;
+  margin-bottom: 20px;
+}
+.grouping
+{
+  font-size: 7px;
+}
+img
+      {
+        width: 100px;
+        height: 80px;
+      }
+       h1 {
+       
+        font-size: 24px;
+        color: white;
+        letter-spacing: 2px;
+        font-family: Starjedi;
+
+
+
+      }
+      span {
+
+  position: relative;
+
+  padding-left: 1em;
+
+  line-height: 1;
+  cursor: pointer;
+}
+span:before {
+    box-sizing: border-box;
+    content: " ";
+    position: absolute;
+    top: 0.1em;
+    left: 0;
+    display: block;
+    width: 1.0em;
+    height: 1.0em;
+    border: 1px solid white;
+    border-radius: .25em;
+    z-index: -1;
+  
+}
+input[type="radio"] + span::before {
+  text-align: center;
+  border-radius: 1em;
+}
+input[type="checkbox"]:checked + span{
+  padding-left: 0.5em;
+  color:#8e44ad;
+}
+input[type="checkbox"]:checked + span:before {
+     position: absolute;
+ content:"";
+ top:0;
+ bottom:0;
+
+ left:0;
+ right:0;
+ margin:auto;
+ width:100%;
+ height:100%;
+    top: 0;
+    height: 1em;
+  
+  }
+
+input[type="checkbox"]:checked + .text
+{
+  position: relative;
+  top:50%;
+}
+
+span
+{
+  margin-right: 0;
+}
+}
