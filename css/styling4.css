@@ -124,18 +124,16 @@ h3
 
 @media only screen and (max-width: 1024px)
 {
-	body {
-  margin: 0;
-  padding: 0;
-  }
-div.img {
-  background-image: url('css/bg.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100vw;
-  height: 100vh;
-  }
+	.boxer .matter,.boxer1,.boxer2 img
+	{
+		display: none;
+	}
+	.boxer .matter-0
+	{
+		visibility: visible;
+	}
+
+
 	h3
 	{
 		font-size: 25px;
