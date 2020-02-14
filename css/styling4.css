@@ -117,6 +117,7 @@ p
 }
 h3
 {
+	margin-top: -12%;
 	margin-left: 20px;
 	font-size: 34px;
 	margin-bottom: 20px;
@@ -126,6 +127,7 @@ h3
 {
 	body
 	{
+		overflow: hidden;
 		background-image: none;
 	}
 	.main-content
@@ -139,7 +141,7 @@ h3
 	.boxer .imagbox img
 	{
 		width:250px;
-		height: 120px;
+		height: 125px;
 	}
 	.boxer .matter-0
 	{
@@ -155,7 +157,7 @@ h3
 	p
 {
 
-	font-size: 14px;
+	font-size: 12px;
 	margin-left:20px;
 	line-height: 21px;
 	letter-spacing:normal;
