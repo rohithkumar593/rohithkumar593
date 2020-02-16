@@ -9,7 +9,30 @@
 	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width initial-scale=1.0">
 	<script type="text/javascript" src="jquery.js"></script>
+	
+</head>
+<body>
+	<iframe src="https:"></iframe>
+<div id="container">
+	<div class="print">
+		<header style="display: flex;">
+				<div class="col1">printf("</div>
+				<div class="col1"><input id="fields" class="field" placeholder="ENTER CYNOSURE HERE" type="text" required maxlength="8" style="background:black;outline: none;"/>")</div>
+	  </header><br/><br/><br/>
+		<div class="syntax" style="color:white">Enter Cynosure in the above syntax</div><br/><br/><br/><br/>
+		<div class="run"><br/><button onclick="fun();" id="myBtn">Run</button></div>
+	</div>
+	
+</div>
 	<script type="text/javascript">
+		
+		var input = document.getElementById("fields");
+		input.addEventListener("keyup", function(event) {
+  		if (event.keyCode === 13) {
+   		event.preventDefault();
+   		document.getElementById("myBtn").click();
+  		}
+		});
 	
 	function fun()
 	{
@@ -26,19 +49,5 @@
 		 }
 	}
 </script>
-</head>
-<body>
-	<iframe src="https:"></iframe>
-<div id="container">
-	<div class="print">
-		<header style="display: flex;">
-				<div class="col1">printf("</div>
-				<div class="col1"><input id="fields" class="field" placeholder="ENTER CYNOSURE HERE" type="text" required maxlength="8" style="background:black;outline: none;"/>")</div>
-	  </header><br/><br/><br/>
-		<div class="syntax" style="color:white">Enter Cynosure in the above syntax</div><br/><br/><br/><br/>
-		<div class="run"><br/><button onclick="fun();">Run</button></div>
-	</div>
-	
-</div>
 </body>
 </html>
