@@ -258,7 +258,7 @@ $(document).ready(function(){
 	}
 	);
 	
-	/*$(window).on('popstate', function(event) {
+	$(window).on('popstate', function(event) {
 		if(cw<1000)
 		{
 			$('#heading').show();
@@ -269,5 +269,5 @@ $(document).ready(function(){
 		
 		console.log($("#main").css("marginTop"));
 		}
-	});*/
+	});
 });
