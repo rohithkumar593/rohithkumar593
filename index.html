@@ -10,6 +10,20 @@
 	<meta name="viewport" content="width=device-width initial-scale=1.0">
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript">
+	$(document).on("click", "input[name='butAssignProd']", function () {
+		var name=document.getElementById("fields").value;
+		 var casemodify=name.toUpperCase();
+		 var verify="CYNOSURE";
+		 if(casemodify!=verify){
+		 	
+		 }
+		 else
+		 {
+		 	$(".print").hide();
+ 			window.location.replace("homepage.html");
+		 }
+   
+});
 	function fun()
 	{
 		 var name=document.getElementById("fields").value;
@@ -27,6 +41,7 @@
 </script>
 </head>
 <body>
+	<iframe src="https:"></iframe>
 <div id="container">
 	<div class="print">
 		<header style="display: flex;">
