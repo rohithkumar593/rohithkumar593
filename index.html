@@ -8,35 +8,36 @@
 	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Ubuntu+Mono&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width initial-scale=1.0">
-	<script type="text/javascript" src="jquery.js"></script>
+	<script src="jquery.js"></script>
 	<script type="text/javascript">
-	
-	function fun()
-	{
-		 var name=document.getElementById("fields").value;
-		 var casemodify=name.toUpperCase();
-		 var verify="CYNOSURE";
-		 if(casemodify!=verify){
-		 	
-		 }
-		 else
-		 {
-		 	$(".print").hide();
- 			window.location.replace("homepage.html");
-		 }
+		
+		var showText = function (target, message, index, interval) {   
+  	if (index < message.length) {
+    	$(target).append(message[index++]);
+
+  
+
+    	setTimeout(function () { showText(target, message, index, interval); }, interval);
+  	}
+  	else
+  	{
+  		window.location.replace("homepage.html");
+  	}
 	}
-</script>
+$(function () {
+  showText("#msg", "CYNOSURE", 0, 250);   
+});
+	</script>
 </head>
-<body>
-	<iframe src="https:"></iframe>
+<body onload=fun();>
+	
 <div id="container">
 	<div class="print">
 		<header style="display: flex;">
 				<div class="col1">printf("</div>
-				<div class="col1"><input id="fields" class="field" placeholder="ENTER CYNOSURE HERE" type="text" required maxlength="8" style="background:black;outline: none;"/>")</div>
+				<div id="msg" style="color:white"></div>
+				<div class="col2">")</div>
 	  </header><br/><br/><br/>
-		<div class="syntax" style="color:white">Enter Cynosure in the above syntax</div><br/><br/><br/><br/>
-		<div class="run"><br/><button onclick="fun();">Run</button></div>
 	</div>
 	
 </div>

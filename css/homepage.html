@@ -11,35 +11,28 @@
 	<link href="https://fonts.googleapis.com/css?family=Changa+One&display=swap" rel="stylesheet">
 </head>
 <script type="text/javascript">
-document.onreadystatechange = function () {
-  var state = document.readyState
-  if (state == 'interactive') {
-       document.getElementById('contents').style.visibility="hidden";
-  } else if (state == 'complete') {
-      setTimeout(function(){
-         document.getElementById('interactive');
-         document.getElementById('load').style.visibility="hidden";
-         document.getElementById('contents').style.visibility="visible";
-      },1000);
-  }
-}
 </script>
 <style type="text/css">
-#load{
-    width:100%;
-    height:100%;
-    position:fixed;
-    z-index:9999;
-    background:url("https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif") no-repeat center center rgba(0,0,0,0.25)
-}
+    @media only screen and (max-width: 1024px)
+    {
+       
+        .main .content
+        {
+            background:url("homepage.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
 </style>
-   
+<script type="text/javascript">
+	
+	function register()
+	{
+		window.location.replace("register.html");
+	}
+</script>
 <body>
-    <div id="load"></div>
- <div id="contents">
-          
-    
-	<header>
+<header>
 		<div class="logo">
 			<img src="Imgs/logo.png" width="200" height="100"/>
 		</div>
@@ -60,23 +53,23 @@ document.onreadystatechange = function () {
 		   </div>
 		 </div>
 	</header>
-	<div class="full-menu">
-		<div class="fullmenu-content">
-			<ul class="page-menu">
-				<li><a class="active" href="homepage.html">Home<span></span></a></li>
-				<li><a href="aboutpage.html">About<span></span></a></li>
-				<li><a href="events.html">Events<span></span></a></li>
-				<li><a href="contact.html">Contact<span></span></a></li>
-				<li><a href="register.html">Register<span></span></a></li>
-			</ul>
-		</div>
-		<a href="" class="modal-close"></a>
+<div class="full-menu">
+	<div class="fullmenu-content">
+		<ul class="page-menu">
+			<li><a class="active" href="homepage.html">Home<span></span></a></li>
+			<li><a href="aboutpage.html">About<span></span></a></li>
+			<li><a href="events.html">Events<span></span></a></li>
+			<li><a href="contact.html">Contact<span></span></a></li>
+			<li><a href="register.html">Register<span></span></a></li>
+		</ul>
 	</div>
-	<div id="movesmoke" class="cd-transition-layer "> 
-		<div class="bg-layer" style="width: 38554.8px; height: 866.4px;"></div>
-	</div>
-	<div class="wrapper">
-	<section class="main" style="height: 722px;">
+	<a href="" class="modal-close"></a>
+</div>
+<div id="movesmoke" class="cd-transition-layer "> 
+	<div class="bg-layer" style="width: 38554.8px; height: 866.4px;"></div>
+</div>
+<div class="wrapper">
+<section class="main" style="height: 722px;">
 	<div class="main-content">
            <div class="videoContainer hide-for-small-only">
                     <div class="overlay"></div>
@@ -89,8 +82,7 @@ document.onreadystatechange = function () {
             <div class="content">
          
                 <h1>Cynosure</h1>
-                <h2 style="font-size: 30px; position: absolute; top:60%;left:14%;">MAR 07<sup>th</sup>-08<sup>th</sup></h2>
-                <button class="h btn btn1 btn1-a" onclick=register();>Register</button>
+                <button class="h" onclick=register();>Register</button>
                 
            </div>
           
@@ -98,14 +90,12 @@ document.onreadystatechange = function () {
 
 	 
 	 
-	</section>
-	</div>
- </div>
+</section>
+</div>
 </body>
 <script type="text/javascript">
 
 </script>
-<script src="jquery-2.1.4.min.js"></script>
 <script src="jquery-2.1.4.min.js"></script>
 <script src="scriptingfile.js"></script>
  

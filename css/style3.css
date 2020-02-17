@@ -8,8 +8,7 @@
   overflow: hidden;
   background-attachment: scroll;
 }
-h4
-{}
+
 .main .main-content .content h1
 {
   font-family: "Starjedi";
@@ -24,8 +23,8 @@ h4
 {
   font-family: 'Iceland', cursive;
  position: absolute;
- top:60%;
- left:10%;
+ top:55%;
+ left:33%;
 }
 .main video ,.main img{
   min-width: 100%; 
@@ -62,14 +61,12 @@ h4
   z-index: 1;
 
 }
-@media only screen and (max-width: 410px)
+@media only screen and (max-width: 1024px)
 {
   .main .main-content .content h1
 {
   font-size: 3em;
-  position: absolute;
-  top:40%;
-  left:10%;
+ 
 }
 .main h2
 {
@@ -84,31 +81,35 @@ h4
 { 
   font-size: 3.2em;
   position: absolute;
-  top:40%;
-  left:13%;
+  
 } 
 .main h2
 {
    position: absolute;
-   top:60%;
+   top:55%;
   left:13%;
 }
 }
+@media only screen and (min-width:480px) and (max-width:767px)
+{
+    
+     .main .main-content .content h1
+    { 
+
+    position: absolute;
+    
+    } 
+}
 @media only screen and (min-width: 768px) and (max-width: 1023px)
 {
+  
  .main .main-content .content h1
 { 
   font-size: 5em;
   position: absolute;
-  top:40%;
-  left:13%;
+  
 } 
-.main h2
-{
-   position: absolute;
-   top:54%;
-  left:13%;
-}
+
 }
 @media only screen and (min-width: 1024px) and (max-width: 1272px)
 {
@@ -116,14 +117,20 @@ h4
 { 
   font-size: 6em;
   position: absolute;
-  top:40%;
-  left:15%;
+  
 } 
 .main h2
 {
    position: absolute;
-   top:55%;
-  left:25%;
+  
+}
+}
+@media only screen and (min-width: 1024px)
+{
+  .main .h
+{
+  visibility: hidden;
+   
 }
 }
 @media only screen and (min-width: 1273px){
@@ -134,10 +141,63 @@ h4
   top:40%;
   left:7%;
 } 
-.main h2
-{
-   position: absolute;
-   top:60%;
-  left:14%;
+
 }
+.btn
+{
+      border: none;
+    font-family: inherit;
+    font-size: 14px;
+       color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 20px 40px;
+    display: inline-block;
+    margin: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.
+.btn1-a{
+    overflow: hidden;
+}
+.btn1 {
+    border: 3px solid #fff;
+    color: #fff;
+}
+btn1-a:after {
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition :all 0.3s;
+}
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
